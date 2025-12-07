@@ -1,0 +1,60 @@
+body {
+    background-color: #131111;
+}
+
+
+
+@keyframes animation1{
+    0%{
+        translate: 0;
+      
+    }
+    50%{
+        translate: 200px;s
+    }
+    100%{
+        translate: 0;
+    }
+}
+
+.parent{
+
+    background-color: inherit;
+    flex-direction: column;
+    align-items: start;
+    width: fit-content;
+    animation: animation1;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+
+}
+
+
+.leftBall{
+    background-image: radial-gradient(black,#533d00);
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+}
+.rightBall{
+    background-image: radial-gradient(black,#533d00);
+    width: 50px;
+    height: 50px;
+    border-radius: 0% 0% 50% 50%;
+}
+.dick{
+    display: flex;
+}
+.root{
+    background-image: radial-gradient(black,#533d00);
+    width: 200px;
+    height: 50px;
+    border-radius: 0 20% 20% 0;
+}
+.tip{
+    background-image: radial-gradient(black,#533d00);
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 100% 100% 50%;
+}
